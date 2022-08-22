@@ -18,7 +18,6 @@ provider "aws" {
 resource "aws_instance" "app_server" {
   ami           = "ami-0c956e207f9d113d5"
   instance_type = "t2.micro"
-  count         = 1
   key_name      = "aws-rsa-key-august-2022"
   tags = {
     Name = var.instance_name
