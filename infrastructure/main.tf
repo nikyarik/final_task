@@ -16,7 +16,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-0c956e207f9d113d5"
+  ami           = "ami-0c9354388bb36c088"
   instance_type = "t2.micro"
   key_name      = "aws-rsa-key-august-2022"
   user_data     = << EOF
