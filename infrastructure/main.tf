@@ -19,7 +19,7 @@ resource "aws_instance" "app_server" {
   ami           = "ami-0c9354388bb36c088"
   instance_type = "t2.micro"
   key_name      = "aws-rsa-key-august-2022"
-  user_data = << EOF
+  user_data = <<EOF
 	#! /bin/bash
         sudo apt-get update
 	sudo apt-get install -y apache2
