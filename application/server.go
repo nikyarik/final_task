@@ -31,6 +31,9 @@ func appAWS(w http.ResponseWriter, r *http.Request) {
 func main() {
 //  http.HandleFunc("/time", appHandler)
 
+  fileServer := http.FileServer(http.Dir("./static"))
+  http.Handle("/", fileServer)
+
   http.HandleFunc("/server_go", appServerGO)
   http.HandleFunc("/", appAWS)
 
