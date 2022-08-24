@@ -22,8 +22,6 @@ func appServerGO(w http.ResponseWriter, r *http.Request) {
 func appAWS(w http.ResponseWriter, r *http.Request) {
 
   fmt.Fprintf(w, "AWS")
-  w.Header().Set("Content-Type", "text/html")
-  w.WriteHeader(http.StatusOK)
 }
 
 
@@ -33,8 +31,8 @@ func main() {
   fileServer := http.FileServer(http.Dir("./static"))
   http.Handle("/", fileServer)
 
-  http.HandleFunc("/server_go", appServerGO)
-  http.HandleFunc("/", appAWS)
+  http.HandleFunc("/itea", appServerGO)
+  http.HandleFunc("/aws", appAWS)
 
 
   log.Println("Started, serving on port 8080")
