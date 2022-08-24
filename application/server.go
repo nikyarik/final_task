@@ -29,8 +29,9 @@ func appAWS(w http.ResponseWriter, r *http.Request) {
 
 func main() {
   http.HandleFunc("/", appHandler)
-
   http.HandleFunc("/server_go", appServerGO)
+  http.HandleFunc("/aws", appAWS)
+
 
   log.Println("Started, serving on port 8080")
   err := http.ListenAndServe(":8080", nil)
