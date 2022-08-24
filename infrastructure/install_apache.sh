@@ -14,3 +14,5 @@ sudo apt -y install docker-ce
 sudo adduser ubuntu docker
 sudo docker run -d -p 8080:8888 --name itea_go bing0id/itea_go:latest
 
+
+
