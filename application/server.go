@@ -22,7 +22,6 @@ func appServerGO(w http.ResponseWriter, r *http.Request) {
 func appAWS(w http.ResponseWriter, r *http.Request) {
 
   fmt.Fprintf("AWS")
-  fmt.Fprintf("<img src="https://media1.giphy.com/media/10FwycrnAkpshW/giphy.gif" alt="awsGif">)
 
 }
 
