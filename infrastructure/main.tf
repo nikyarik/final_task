@@ -29,7 +29,7 @@ resource "aws_instance" "app_server" {
 }
 
 resource "aws_security_group" "sg-tcp-ports" {
-  name = “sec-group-tcp-ports”
+  name = "sec-group-tcp-ports"
   description = "Allow HTTP(S),SSH,8080,8888 traffic via Terraform"
 
   ingress {
