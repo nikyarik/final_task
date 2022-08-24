@@ -9,25 +9,25 @@ import (
 
 func appHandler(w http.ResponseWriter, r *http.Request) {
 
-  fmt.Fprintf(time.Now(), "Hello this new fresh server")
+  fmt.Println(time.Now(), "Hello this new fresh server")
 
 }
 
 func appServerGO(w http.ResponseWriter, r *http.Request) {
 
-  fmt.Fprintf("ITEA course DevOps!")
+  fmt.Fprintf(w, "ITEA course DevOps!")
 
 }
 
 func appAWS(w http.ResponseWriter, r *http.Request) {
 
-  fmt.Fprintf("AWS")
+  fmt.Fprintf(w, "AWS")
 
 }
 
 
 func main() {
-  http.HandleFunc("/", appHandler)
+  http.HandleFunc("/time", appHandler)
   http.HandleFunc("/server_go", appServerGO)
   http.HandleFunc("/aws", appAWS)
 
