@@ -21,15 +21,18 @@ func appServerGO(w http.ResponseWriter, r *http.Request) {
 
 func appAWS(w http.ResponseWriter, r *http.Request) {
 
-  fmt.Fprintf(w, "AWS")
-
+//  fmt.Fprintf(w, "AWS")
+    w.Header().Set("Content-Type", "text/html")
+    w.WriteHeader(http.StatusOK)
+    _, _ = fmt.Fprintf(w, <img src="https://c.tenor.com/uUrXSnCQQcAAAAAC/amazon-cash.gif" alt="AWS this is big MONEY">)
 }
 
 
 func main() {
-  http.HandleFunc("/time", appHandler)
+//  http.HandleFunc("/time", appHandler)
+
   http.HandleFunc("/server_go", appServerGO)
-  http.HandleFunc("/aws", appAWS)
+  http.HandleFunc("/", appAWS)
 
 
   log.Println("Started, serving on port 8080")
