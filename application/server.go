@@ -21,10 +21,9 @@ func appServerGO(w http.ResponseWriter, r *http.Request) {
 
 func appAWS(w http.ResponseWriter, r *http.Request) {
 
-//  fmt.Fprintf(w, "AWS")
-    w.Header().Set("Content-Type", "text/html")
-    w.WriteHeader(http.StatusOK)
-    _, _ = fmt.Fprintf(w, <img src="https://c.tenor.com/uUrXSnCQQcAAAAAC/amazon-cash.gif" alt="AWS this is big MONEY">)
+  fmt.Fprintf(w, "AWS")
+  w.Header().Set("Content-Type", "text/html")
+  w.WriteHeader(http.StatusOK)
 }
 
 
