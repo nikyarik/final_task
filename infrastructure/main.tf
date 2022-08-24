@@ -23,8 +23,8 @@ resource "aws_instance" "app_server" {
   vpc_security_group_ids = [aws_security_group.sg-tcp-ports.id]
   tags = {
     Name  = var.instance_name
-    BU    = ITEA
-    Owner = yarik
+    BU    = "ITEA"
+    Owner = "yarik"
   }
 }
 
