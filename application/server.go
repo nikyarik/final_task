@@ -24,6 +24,10 @@ func appAWS(w http.ResponseWriter, r *http.Request) {
   fmt.Fprintf(w, "AWS")
 }
 
+func appAWS(w http.ResponseWriter, r *http.Request) {
+
+  fmt.Fprintf(w, "numVERSION")
+}
 
 func main() {
 //  http.HandleFunc("/time", appHandler)
@@ -33,6 +37,7 @@ func main() {
 
   http.HandleFunc("/itea", appServerGO)
   http.HandleFunc("/aws", appAWS)
+  http.HandleFunc("/ver", appVERSION)
 
 
   log.Println("Started, serving on port 8080")
