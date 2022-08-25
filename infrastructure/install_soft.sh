@@ -12,7 +12,7 @@ apt-cache policy docker-ce
 sudo apt update
 sudo apt -y install docker-ce
 sudo adduser ubuntu docker
-sudo docker run -d -p 8080:8080 --name itea_go bing0id/itea_go:latest
+#sudo docker run -d -p 8080:8080 --name itea_go bing0id/itea_go:latest
 
 
 

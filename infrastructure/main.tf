@@ -19,7 +19,7 @@ resource "aws_instance" "app_server" {
   ami           = "ami-0c9354388bb36c088"
   instance_type = "t2.micro"
   key_name      = "aws-rsa-key-august-2022"
-  user_data     = "${file("install_apache.sh")}"
+  user_data     = "${file("install_soft.sh")}"
 //  vpc_security_group_ids = [aws_security_group.sg-tcp-ports.id]
   tags = {
     Name  = var.instance_name
