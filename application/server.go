@@ -26,7 +26,7 @@ func appAWS(w http.ResponseWriter, r *http.Request) {
 
 func appVERSION(w http.ResponseWriter, r *http.Request) {
 
-  fmt.Fprintf(w, "numVERSION")
+  fmt.Fprintf(w, "Version #1.0.numVERSION")
 }
 
 func main() {
