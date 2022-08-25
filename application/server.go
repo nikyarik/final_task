@@ -24,7 +24,7 @@ func appAWS(w http.ResponseWriter, r *http.Request) {
   fmt.Fprintf(w, "AWS")
 }
 
-func appAWS(w http.ResponseWriter, r *http.Request) {
+func appVERSION(w http.ResponseWriter, r *http.Request) {
 
   fmt.Fprintf(w, "numVERSION")
 }
