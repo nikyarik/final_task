@@ -2,8 +2,7 @@
 
 AWS EC2 JENKINS
 
-branch master
-# final_task
-# final_task
-# final_task
-# final_task
+My describe
+
+realize on:
+
