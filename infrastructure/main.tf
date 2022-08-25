@@ -20,7 +20,7 @@ resource "aws_instance" "app_server" {
   instance_type = "t2.micro"
   key_name      = "aws-rsa-key-august-2022"
   user_data     = "${file("install_soft.sh")}"
-//  vpc_security_group_ids = [aws_security_group.sg-tcp-ports.id]
+  vpc_security_group_ids = [aws_security_group.sg-tcp-ports.id]
   tags = {
     Name  = var.instance_name
     BU    = "ITEA"
